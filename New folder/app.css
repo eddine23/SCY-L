@@ -1,0 +1,140 @@
+
+.btn-group button {
+  
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  display: none;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* CSS */
+.button-50 {
+  
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 5px 0;
+  overflow: visible;
+  padding: 6px 20px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 24px;
+  }
+}
+
+
+.speech-bubble {
+  position: relative;
+  background: #4294da;
+  border-radius: .4em;
+  color: white;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom-color: #4294da;
+  border-top: 0;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.share-inside {
+  background: url('https://awik.io/demo/js-selected-text/twicon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 24px 19px;
+}
+
+.share-inside a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.icon-1 {
+  background: url('youtube-icon.png');
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 24px;
+  display: block;
+}
+.icon-2 {
+  background: url('google-icon.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 24px;
+  width: 24px;
+  display: block;
+}
+.icon-3 {
+  background: url('copy-icon.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 24px;
+  width: 24px;
+  display: block;
+}
+
+button.button-50 > span {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2px;}
+
+

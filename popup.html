@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCY Extension</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>History</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search history..." />
+      <button id="delete-btn">Delete Selected</button>
+      <button id="clean-history-btn">Clean History</button>
+    </div>
+    <div id="shortcuts-container">
+      <button class="shortcut-btn" data-hours="1">Last 1 Hour</button>
+      <button class="shortcut-btn" data-hours="2">Last 2 Hours</button>
+      <button class="shortcut-btn" data-hours="24">Last 24 Hours</button>
+      <button class="shortcut-btn" data-hours="48">Last 48 Hours</button>
+      <button class="shortcut-btn" data-days="7">Last Week</button>
+    </div>
+    <div id="date-range-container" style="display: none">
+      <label for="start-date">Start Date:</label>
+      <input type="datetime-local" id="start-date" />
+      <label for="end-date">End Date:</label>
+      <input type="datetime-local" id="end-date" />
+      <button id="delete-date-range-btn">Delete by Date Range</button>
+    </div>
+    <div id="toggle-buttons">
+      <button id="all-btn" class="toggle-btn">
+        <img src="icons/all-icon.png" alt="All" class="icon" />
+      </button>
+      <button id="S-btn" class="toggle-btn">
+        <img src="icons/google-icon.png" alt="Search" class="icon" />
+      </button>
+      <button id="C-btn" class="toggle-btn">
+        <img src="icons/copy-icon.png" alt="Copy" class="icon" />
+      </button>
+      <button id="Y-btn" class="toggle-btn">
+        <img src="icons/youtube-icon.png" alt="YouTube" class="icon" />
+      </button>
+      <button id="L-btn" class="toggle-btn">
+        <img src="icons/link-icon.png" alt="Link" class="icon" />
+      </button>
+    </div>
+    <div id="history"><input type="checkbox" id="select-all" /> Select All</div>
+    <a href="#" id="fullscreen-link">Open in Fullscreen</a>
+    <script src="popup.js"></script>
+  </body>
+</html>

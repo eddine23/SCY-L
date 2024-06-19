@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#search-container,
+#shortcuts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#search-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#delete-btn,
+#clean-history-btn,
+#delete-date-range-btn,
+.shortcut-btn {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shortcut-btn {
+  background-color: #4285f4;
+}
+
+#clean-history-btn {
+  margin-left: 10px;
+}
+
+#date-range-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#date-range-container label {
+  margin: 5px 0;
+}
+
+#toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#all-btn {
+  background: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335);
+  color: white;
+}
+
+#S-btn {
+  background: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335);
+  color: white;
+}
+
+#C-btn {
+  background-color: #4285f4;
+  color: white;
+}
+
+#Y-btn {
+  background-color: #ff0000;
+  color: white;
+}
+
+#L-btn {
+  background-color: #000000;
+  color: white;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.history-item > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history;
